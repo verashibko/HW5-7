@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1000px;
+    text-align: center;
+    padding: 15px;
+    margin: 0 auto;
+    flex-shrink: 1;
+}
+
+.team__title {
+    margin: var(--pane-margin);
+    font-size: 35px;
+    font-family: fantasy;
+    font-weight: 900;
+    text-transform: capitalize;
+    color: rgb(47, 47, 47);
+    border-bottom: 4px rgb(29, 29, 29) solid;
+}
+
+.team__text {
+    text-align: justify;
+    width: 635px;
+    height: 88px;
+    font-family: cursive;
+    margin: 22px;
+    font-style: italic;
+    margin-bottom: 8px;
+    color: var(--color-silver);
+    flex-wrap: wrap;
+}
+
+.speciality {
+    padding: 35px;
+}
+
+.inner {
+    display: inline-flex;
+    gap: 0px 22px;
+    flex-direction: row;
+    width: fit-content;
+}
+
+.ml_inner {
+    display: inline-block;
+    gap: 0px 15px;
+}
+
+.nav__menu,
+.nav__menu li,
+.nav__menu a {
+    display: block;
+    text-decoration: none;
+    list-style: none;
+    text-align: left;
+    padding: 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav__item {
+    width: 250px;
+}
+
+.nav__menu a {
+    font-family: fantasy;
+}
+
+button:hover {
+    cursor: pointer;
+    background: #08090ad5;
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 4px;
+    border-image-source: linear-gradient(to left, #00C853, #228da8, #3320da);
+}
+
+a:hover:focus {
+    background: linear-gradient(135deg, #ba33e8 60%, #30b4d9 30%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+a:link {
+    color: #3e3c3cda;
+}
+
+img {
+    width: max-content;
+    box-shadow: 10px 5px 5px rgb(67, 41, 41);
+    flex-shrink: 1;
+}
+
+p {
+    text-align: left;
+    padding: 15px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+h3 {
+    padding: 2px;
+    margin: 15px;
+    text-align: left;
+    color: rgb(130 0 0 / 60%);
+    font-size: 25px;
+    text-shadow: #a7a7a7 -17px -8px 6px;
+    font-family: cursive;
+    text-transform: uppercase;
+}
+
+body {
+    background: linear-gradient(to right, #F6EFD2, #bdd2cb);
+    justify-content: center;
+}
+
+.nav__item>a:hover {
+    color: #c73939e8;
+}
+
+button>a {
+    background: linear-gradient(135deg, #12BCB0 20%, #FABE0E 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    line-height: 1;
+    font-size: smaller;
+    text-transform: uppercase;
+    font-family: monospace;
+}
+
+button {
+    width: 70px;
+    height: 35px;
+    background: #191b1c;
+    border: none;
+    border-radius: 8px;
+}
